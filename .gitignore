@@ -1,0 +1,9 @@
+bin/
+include/
+lib/
+*.pyc
+.Python
+.project
+.pydevproject
+.settings/
+

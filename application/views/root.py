@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from flask import Blueprint, render_template
-app = Blueprint(__name__, "root")
+app = Blueprint("root", __name__)
 
 
 @app.route("/")
-def index():
+def root():
     return render_template("index.html")

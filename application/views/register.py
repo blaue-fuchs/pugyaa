@@ -20,5 +20,5 @@ def set():
     token = request.args.get("oauth_token", "")
     secret = request.cookies.get("oauth_token_secret", "")
     access_token = get_access_token(token, secret)
-    is_finish = save_access_token(access_token)
-    return redirect(url_for("/"))
+    save_access_token(access_token)
+    return access_token
